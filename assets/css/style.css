@@ -436,6 +436,17 @@ body.nav-active {
 .btn-secondary .text-2 {
   color: var(--white);
 }
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+}
 /*-----------------------------------*\
   #PRELOAD
 \*-----------------------------------*/
